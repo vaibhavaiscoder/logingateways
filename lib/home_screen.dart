@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:logingateways/controllers/google_auth_controller.dart';
 import 'package:logingateways/screens/email_signup_screen.dart';
 import 'package:logingateways/screens/phone_sign_up.dart';
+import 'package:logingateways/screens/shared_signup_page.dart';
 import 'package:velocity_x/velocity_x.dart';
 
 import 'consts/firebase_auth.dart';
@@ -47,6 +48,15 @@ class HomeScreen extends StatelessWidget {
                 controller.signInWithGoogle(context);
                },
               child: Text('google'),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Get.to(() => SharedSignupPage());
+              },
+              child: Text('shared preferences'),
             ),
           ]),
         ));

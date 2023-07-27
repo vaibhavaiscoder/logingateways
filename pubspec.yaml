@@ -45,6 +45,7 @@ dependencies:
   google_sign_in:
   flutter_facebook_auth:
   firebase_ui_auth:
+  shared_preferences:
 
 dev_dependencies:
   flutter_test:
